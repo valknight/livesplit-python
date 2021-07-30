@@ -86,6 +86,12 @@ This will initialise the game timer, then immediately pause it to stop it from r
 | `reset`          | Boolean | Whether to reset the timer when creating this object                 | `False`          |
 | `setupGameTimer` | Boolean | Whether to setup and pause the game timer when creating this object. | Value of `reset` |
 
+## Projects using LiveSplit-Python
+
+- [LoadStar - Cooking Mama Cookstar load removal tool](https://github.com/valknight/loadstar)
+
+Using LiveSplit-Python yourself? Make a PR, and add it here!
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
