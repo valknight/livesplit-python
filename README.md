@@ -1,6 +1,6 @@
-# PySplit
+# LiveSplit-Python
 
-PySplit is a Python library for communicating with LiveSplit Server.
+LiveSplit-Python is a Python library for communicating with LiveSplit Server.
 
 ## Requirements
 
@@ -88,8 +88,6 @@ This will initialise the game timer, then immediately pause it to stop it from r
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 
