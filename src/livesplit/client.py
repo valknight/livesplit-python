@@ -4,10 +4,17 @@ from typing import ByteString
 
 
 class Livesplit():
-    def __init__(self, ip="127.0.0.1", port: int = 16834):
+    def __init__(self, ip="127.0.0.1", port: int = 16834, reset: bool = False, setupGameTimer=None):
+        if setupGameTimer is None:
+            setupGameTimer = reset
         self.ip = ip
         self.port = port
-        self.reset()
+        if reset:
+            self.reset()
+        if setupGameTimer:
+            self.setupGameTimer()
+
+    def setupGameTimer(self):
         self.initGameTimer()
         self.pauseGameTimer()
 
