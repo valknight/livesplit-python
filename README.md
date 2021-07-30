@@ -1,6 +1,6 @@
-# PySplit
+# LiveSplit-Python
 
-PySplit is a Python library for communicating with LiveSplit Server.
+LiveSplit-Python is a Python library for communicating with LiveSplit Server.
 
 ## Requirements
 
