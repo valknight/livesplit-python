@@ -13,7 +13,7 @@ Once it's installed, add it to your Livesplit layout, and right click LiveSplit,
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install LiveSplit-Python.
 
 ```bash
 pip install livesplit
