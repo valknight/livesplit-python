@@ -1,13 +1,22 @@
 # PySplit
 
-PySplit is a Python library for communicating with Livesplit Server.
+PySplit is a Python library for communicating with LiveSplit Server.
+
+## Requirements
+
+- Livesplit
+- [Livesplit.Server](https://github.com/LiveSplit/LiveSplit.Server) added to your layout.
+
+The latest dev builds of Livesplit come with LiveSplit server pre-packaged. Otherwise, follow the instructions [here](https://github.com/LiveSplit/LiveSplit.Server) to install LiveSplit server.
+
+Once it's installed, add it to your Livesplit layout, and right click LiveSplit, go to "Control" and click "Start Server".
 
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install livesplit-python
+pip install livesplit
 ```
 
 ## Usage
@@ -32,7 +41,7 @@ l.startGameTimer()
 time.sleep(1)
 
 # Stop the game timer 1 second in
-l.stopGameTimer()
+l.pauseGameTimer()
 
 time.sleep(1)
 
@@ -46,6 +55,27 @@ time.sleep(1)
 
 l.reset()
 ```
+### Commands
+
+Supported commands are as followed:
+
+- `pauseGameTimer`
+- `startGameTimer`
+- `initGameTimer`
+- `startTimer`
+- `startOrSplit`
+- `split`
+- `unsplit`
+- `skipSplit`
+- `pause`
+- `resume`
+- `reset`
+
+### Helpers
+
+- `setupGameTimer`
+
+This will initialise the game timer, then immediately pause it to stop it from running. Helps if you are going to be using it, just, later!
 
 ### Livesplit Parameters
 

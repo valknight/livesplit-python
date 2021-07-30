@@ -23,12 +23,18 @@ class Livesplit():
         self.getSocket().send(str.encode(m))
 
     def pauseGameTimer(self):
+        """Pauses the game timer. Does nothing if already paused.
+        """
         self.sendCommand("pausegametime")
 
     def startGameTimer(self):
+        """Start or resume the game timer if already paused.
+        """
         self.sendCommand("unpausegametime")
 
     def initGameTimer(self):
+        """Setup the game timer for future use - if you use setupGameTimer, this will be called for you`
+        """
         self.sendCommand("initgametime")
 
     def startTimer(self):
